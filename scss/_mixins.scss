@@ -82,8 +82,18 @@
   white-space: nowrap;
 }
 
+@mixin box-stile($margin,$width,$height,$padding)
+{
+  margin: $margin;
+  width: $width;
+  height:$height;
+  padding: $padding;
+}
 
-
-
+@mixin dffd($fd,$ai) {
+  display: flex;
+  flex-direction: $fd;
+  align-items: $ai;
+}
 
 

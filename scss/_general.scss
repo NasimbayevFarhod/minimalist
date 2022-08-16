@@ -1,6 +1,7 @@
 /* GENERAL */
 
 *{
+  margin: 0;
   box-sizing: border-box;
 }
 
@@ -12,6 +13,18 @@
 html{
   height: 100%;
   box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+ul
+{
+  list-style: none;
+  padding: 0;
+}
+
+a
+{
+  text-decoration: none;
 }
 
 img{
@@ -25,7 +38,9 @@ body{
   height: 100%;
   margin: 0;
   padding: 0;
-  /* font-family: "Roboto", "Arial", sans-serif; */
+  background-color: #FAFAFA;
+  font-family: 'Public Sans';
+  
   /* font-size: 16px; */
   /* font-weight: 400; */
   /* line-height: var(--main-line-height); */

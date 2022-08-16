@@ -1,0 +1,56 @@
+.media__inner {
+  padding-bottom: 80px;
+  @include dffd(column,center)
+}
+.media__title {
+  max-width: 350px;
+  margin-bottom: 30px;
+  font-family: 'Ibarra Real Nova'; 
+  @include typography-styles(normal,40px,42px,700,center,$Grayish-Dark);
+  letter-spacing: -0.357143px;
+}
+.media__line {
+  display: none;
+}
+.link {
+  display: inline-block;
+  min-width: 162px;
+  padding: 17px 35px;
+  @include typography-styles(normal,12px,14.1px,400,center,$Grayish-Dark);
+  border: 1px solid $Grayish-Dark;
+    &:hover
+    {
+      color: #FAFAFA;
+      background-color: $Grayish-Dark;
+    }
+}
+
+@include mobile-first(700px)
+{
+  .media__inner {
+    padding-bottom: 96px;
+    @include dffd(row,center);
+    justify-content: space-between;
+  }
+  .media__title {
+    min-width: 350px;
+    margin-bottom: 0;
+  }
+  .media__line {
+    display: block;
+    margin: 0 32px;
+    width: 50%;
+    height: 1px;
+    background-color: $Grayish-Dark;
+    opacity: 0.15;
+  }
+}
+
+@include mobile-first(1000px)
+{
+  .media__inner {
+    padding-bottom: 150px;
+  }
+}
+
+

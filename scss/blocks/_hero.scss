@@ -1,1 +1,110 @@
+.hero__inner {
+  padding-top: 322px;
+  background-image: url(../../images/Bitmap-hero-bg-tablet.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 271px;
+  background-position: top center;
+}
+
+.hero-img
+{
+  width: 100%;
+}
+
+.hero__wrapper {
+  width: 100%;
+  background-color: #FAFAFA;
+}
+
+.hero__title {
+  margin: 0 0 32px;
+  font-family: 'Ibarra Real Nova';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 42px;
+  letter-spacing: -0.357143px;
+  color: #33323D;
+}
+
+.hero__link {
+  position: relative;
+  display: inline-block;
+  min-width: 200px;
+  padding: 17px 0 17px 50px;
+  font-family: 'Public Sans';
+  @include typography-styles(normal,12px,14px,400,center,#FFFFFF);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background-color: $darc-blue;
+    &::before
+    {
+      content: "";
+      position: absolute;
+      width: 50px;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background-image: url(../../images/about-me-button-befor.svg);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-color: #0000001a;
+    }
+    &:hover
+    {
+      background-color: $grean-color;
+    }
+    &:hover::before
+    {
+      background-image: url(../../images/about-me-button-hover.svg);
+    }
+}
+
+@include mobile-first(600px)
+{
+  .hero__inner {
+    padding-top: 322px;
+    background-image: url(../../images/Bitmap-hero-bg-tablet.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+  
+  .hero__wrapper {
+    max-width: 514px;
+    padding: 56px 56px 0 0;
+  }
+  .hero__title
+  {
+    margin: 0 0 48px;
+  }
+}
+
+@include mobile-first(800px)
+{
+  .hero__inner {
+    padding-top: 243px;
+    background-image: url(../../images/Bitmap-hero-bg.jpg);
+  }
+  
+  .hero__wrapper {
+    max-width: 445px;
+    background-color: #FAFAFA;
+  }
+  .hero__title
+  {
+    margin: 0 0 52px;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 50px;
+    letter-spacing: -0.446429px;
+  }
+}
+
+@include bgRetinaImages()
+{
+  
+}
+
+
 

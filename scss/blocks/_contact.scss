@@ -1,0 +1,83 @@
+.contact {
+  padding: 32px 0 80px;
+
+}
+.contact__inner {
+  flex-direction: column;
+}
+.contact__title {
+  margin-bottom: 24px;
+  font-family: 'Ibarra Real Nova';
+  @include typography-styles(normal,40px,42px,700px,left,$Grayish-Dark);
+  letter-spacing: -0.357143px;
+}
+.contact__form {
+
+}
+.contact__label
+{
+  width: 100%;
+  min-width: 311px;
+
+  display: flex;
+  flex-direction: column;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 30px;
+  color: #33323D;
+  mix-blend-mode: normal;
+  opacity: 0.8;
+}
+
+.contact__input {
+  margin-top: 9px;
+  outline: none;
+  padding: 9px 0 9px 16px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 30px;
+  color: #33323D;
+  mix-blend-mode: normal;
+  background-color: #33323d1a;
+  border: 1px solid transparent;
+}
+
+.contact__input:not(:placeholder-shown):not(:focus):invalid
+{
+  border: 1px solid $red;
+}
+
+.contact__input:not(:placeholder-shown):not(:focus):invalid ~ .error
+{
+  opacity: 1;
+}
+
+.contact__input--problem
+{
+  padding-bottom: 57px;
+}
+
+.contact__input:focus {
+  border: 1px solid $grean-color;
+  color: $Grayish-Dark;
+}
+
+.error {
+  opacity: 0;
+  color: #F43030;
+}
+
+.contact-button {
+  min-width: 200px;
+  padding: 17px 24px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background-color: $darc-blue;
+  color: #FFFFFF;
+}

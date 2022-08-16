@@ -1,0 +1,119 @@
+
+
+.overflow
+{
+  overflow: hidden;
+}
+
+.header {
+  padding: 32px 0 40px;
+}
+
+.header__inner {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.site-logo-link {
+  color: $Grayish-Dark;
+  margin-right: auto;
+}
+
+@media only screen and (max-width:700px)
+{
+  .nav {
+    width: 24px;
+    height: 13px;
+    background-image: url(../../images/Group-bamburg-oppen.svg);
+    border: transparent;
+  }
+  
+  .close
+  {
+    width: 18px;
+    height: 19px;
+    background-image: url(../../images/Group-gamburg-close.svg);
+  }
+  
+  .navbar {
+    display: none;
+    position: absolute;
+    width: 70%;
+    top: 56px;
+    right: 0;
+    padding: 40px 0;
+    background-color: $Grayish-Dark;
+    overflow: hidden;
+  }
+  
+  .nav--active
+  {
+    display: block;
+  }
+}
+
+
+.header__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  text-decoration: none;
+}
+
+.header__item {
+  &:not(:last-child)
+  {
+    margin-bottom: 32px;
+  }
+}
+.header__link {
+  text-decoration: none;
+  font-family: 'Public Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+
+@media only screen and (min-width:701px)
+{
+  .header {
+    padding: 64px 0 54px;
+  }
+
+  .header__inner {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  .site-logo-link {
+    color: $Grayish-Dark;
+    margin-right: auto;
+  }
+  .nav {
+    display: none;
+  }
+  .header__list {
+    display: flex;
+  }
+  .header__item {
+    &:not(:last-child)
+    {
+      margin-bottom: 0px;
+      margin-right: 42px;
+    }
+  }
+  .header__link {
+    color: $Grayish-Dark;
+  }
+  .header__link--color {
+    color: $grean-color;
+  }
+}

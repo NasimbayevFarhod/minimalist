@@ -1,7 +1,28 @@
 /* CONTAINER */
 .container{
   width: 100%;
-  max-width: 1240px;
+  max-width: 1150px;
   margin: 0 auto;
   padding: 0 20px;
 }
+
+
+
+.container
+{
+  @include mobile-first(350px)
+  {
+    max-width: 1175;
+    padding: 0 32px;
+  }
+  @include mobile-first(700px)
+  {
+    max-width: 1190px;
+    padding: 0 40px;
+  }
+}
+
+
+
+
+
