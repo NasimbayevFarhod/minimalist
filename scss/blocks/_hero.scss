@@ -79,12 +79,29 @@
     margin: 0 0 48px;
   }
 }
+@include bgRetinaImages
+{
+  .hero__inner
+  {
+    background-image: url(../../images/Bitmap-hero-bg-tablet@2.jpg);
+  }
+
+}
 
 @include mobile-first(800px)
 {
   .hero__inner {
     padding-top: 243px;
     background-image: url(../../images/Bitmap-hero-bg.jpg);
+  }
+
+  @include bgRetinaImages
+  {
+    .hero__inner
+    {
+      background-image: url(../../images/Bitmap-hero-bg@2x.jpg);
+    }
+  
   }
   
   .hero__wrapper {
@@ -101,10 +118,7 @@
   }
 }
 
-@include bgRetinaImages()
-{
-  
-}
+
 
 
 

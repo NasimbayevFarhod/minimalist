@@ -618,15 +618,29 @@ body {
     margin: 0 0 48px;
   }
 }
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .hero__inner {
+    background-image: url(../../images/Bitmap-hero-bg-tablet@2.jpg);
+  }
+}
 @media only screen and (min-width: 800px) {
   .hero__inner {
     padding-top: 243px;
     background-image: url(../../images/Bitmap-hero-bg.jpg);
   }
+}
+@media only screen and (min-width: 800px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 800px) and (min-device-pixel-ratio: 2), only screen and (min-width: 800px) and (min-resolution: 192dpi), only screen and (min-width: 800px) and (min-resolution: 2dppx) {
+  .hero__inner {
+    background-image: url(../../images/Bitmap-hero-bg@2x.jpg);
+  }
+}
+@media only screen and (min-width: 800px) {
   .hero__wrapper {
     max-width: 445px;
     background-color: #FAFAFA;
   }
+}
+@media only screen and (min-width: 800px) {
   .hero__title {
     margin: 0 0 52px;
     font-weight: 700;
@@ -959,6 +973,7 @@ body {
 
 .contact__input--problem {
   padding-bottom: 57px;
+  resize: none;
 }
 
 .contact__input:focus {
