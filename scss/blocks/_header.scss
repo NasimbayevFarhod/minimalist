@@ -4,6 +4,7 @@
 }
 
 .header {
+  z-index: 9;
   padding: 32px 0 40px;
 }
 
@@ -36,6 +37,7 @@
   }
   
   .navbar {
+    
     display: none;
     position: absolute;
     width: 70%;
