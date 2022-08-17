@@ -67,6 +67,13 @@
 }
 
 
+@include mobile-first(1100px)
+{
+  .me__inner {
+    justify-content: start;
+  }
+}
+
 
 
 

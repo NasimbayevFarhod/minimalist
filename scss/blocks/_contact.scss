@@ -2,23 +2,19 @@
   padding: 32px 0 80px;
 
 }
-.contact__inner {
-  flex-direction: column;
-}
+
 .contact__title {
+  min-width: 250px;
   margin-bottom: 24px;
   font-family: 'Ibarra Real Nova';
   @include typography-styles(normal,40px,42px,700px,left,$Grayish-Dark);
   letter-spacing: -0.357143px;
 }
-.contact__form {
 
-}
 .contact__label
 {
   width: 100%;
   min-width: 311px;
-
   display: flex;
   flex-direction: column;
   font-weight: 700;
@@ -81,3 +77,30 @@
   background-color: $darc-blue;
   color: #FFFFFF;
 }
+
+
+@include mobile-first(900px)
+{
+  .contact__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .contact__form {
+    width: 100%;
+    max-width: 635px;
+    margin-left: 125px;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
